@@ -1,10 +1,10 @@
 # flake8-pytest-fixtures-style
 
 [![Build Status](https://travis-ci.com/sidorov-as/flake8-pytest-fixtures-style.svg?branch=main)](https://travis-ci.org/sidorov-as/flake8-pytest-fixtures-style)
-[![Maintainability](https://api.codeclimate.com/v1/badges/f85c1fd2ad4af63d93b6/maintainability)](https://codeclimate.com/github/sidorov-as/flake8-pytest-fixtures/maintainability)
-[![Test Coverage](https://api.codeclimate.com/v1/badges/f85c1fd2ad4af63d93b6/test_coverage)](https://codeclimate.com/github/sidorov-as/flake8-pytest-fixtures/test_coverage)
-[![PyPI version](https://badge.fury.io/py/flake8-pytest-fixtures.svg?)](https://badge.fury.io/py/flake8-pytest-fixtures)
-![PyPI - Python Version](https://img.shields.io/pypi/pyversions/flake8-pytest-fixtures)
+[![Maintainability](https://api.codeclimate.com/v1/badges/705e9a1c834a48e1d05c/maintainability)](https://codeclimate.com/github/sidorov-as/flake8-pytest-fixtures-style/maintainability)
+[![Test Coverage](https://api.codeclimate.com/v1/badges/705e9a1c834a48e1d05c/test_coverage)](https://codeclimate.com/github/sidorov-as/flake8-pytest-fixtures-style/test_coverage)
+[![PyPI version](https://badge.fury.io/py/flake8-pytest-fixtures-style.svg?)](https://badge.fury.io/py/flake8-pytest-fixtures-style)
+![PyPI - Python Version](https://img.shields.io/pypi/pyversions/flake8-pytest-fixtures-style)
 
 A flake8 extension that checks pytest fixtures.
 
