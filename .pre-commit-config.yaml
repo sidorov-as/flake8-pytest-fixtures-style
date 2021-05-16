@@ -1,0 +1,64 @@
+default_stages:
+-   commit
+
+exclude: tests/test_files/
+
+repos:
+-   repo: https://github.com/pre-commit/pre-commit-hooks
+    rev: v3.2.0
+    hooks:
+    -   id: trailing-whitespace
+    -   id: double-quote-string-fixer
+    -   id: end-of-file-fixer
+        exclude: \.svg$
+
+-   repo: https://github.com/pre-commit/pygrep-hooks
+    rev: v1.7.0
+    hooks:
+    -   id: python-check-blanket-noqa
+
+-   repo: https://gitlab.com/pycqa/flake8
+    rev: '3.9.0'
+    hooks:
+    -   id: flake8
+        additional_dependencies:
+        -   flake8-bugbear==21.3.2
+        -   flake8-builtins==1.5.3
+        -   flake8-commas==2.0.0
+        -   flake8-comprehensions==3.4.0
+        -   flake8-debugger==4.0.0
+        -   flake8-docstrings==1.6.0
+        -   flake8-functions==0.0.5
+        -   flake8-polyfill==1.0.2
+        -   flake8-pytest-style==1.4.0
+        -   flake8-print==4.0.0
+        -   flake8-quotes==3.2.0
+        -   flake8-string-format==0.3.0
+        -   flake8-todo==0.7
+        -   flake8-variables-names==0.0.4
+        -   flake8-class-attributes-order==0.1.2
+        -   flake8-broken-line==0.3.0
+        -   mypy-extensions==0.4.3  # Remove in future
+
+-   repo: https://github.com/pre-commit/mirrors-mypy
+    rev: v0.812
+    hooks:
+    -   id: mypy
+        entry: mypy .
+        pass_filenames: false
+
+- repo: https://github.com/psf/black
+  rev: aebd3c3
+  hooks:
+    - id: black
+      language_version: python
+
+- repo: https://github.com/PyCQA/isort
+  rev: '5.7.0'
+  hooks:
+    - id: isort
+
+- repo: https://github.com/MarcoGorelli/absolufy-imports
+  rev: v0.3.0
+  hooks:
+    - id: absolufy-imports
