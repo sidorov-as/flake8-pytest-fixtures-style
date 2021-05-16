@@ -24,14 +24,6 @@ class Plugin(BasePlugin[Config]):
     @classmethod
     def add_options(cls, option_manager: OptionManager) -> None:
         option_manager.add_option(
-            '--python-files',
-            type=str,
-            default=DEFAULT_CONFIG.python_files,
-            parse_from_config=True,
-            dest='python_files',
-            nargs='+',
-        )
-        option_manager.add_option(
             '--python-functions',
             type=str,
             default=DEFAULT_CONFIG.python_functions,
@@ -44,4 +36,4 @@ class Plugin(BasePlugin[Config]):
     def parse_options_to_config(
         cls, option_manager: OptionManager, options: argparse.Namespace, args: List[str]
     ) -> Config:
-        return Config(python_files=options.python_files, python_functions=options.python_functions)
+        return Config(python_functions=options.python_functions)

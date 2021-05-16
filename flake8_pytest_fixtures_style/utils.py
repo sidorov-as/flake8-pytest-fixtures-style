@@ -1,14 +1,8 @@
 import ast
-import os
 from fnmatch import fnmatch
 from typing import List
 
 from flake8_pytest_style.utils import AnyFunctionDef, get_fixture_decorator, get_qualname
-
-
-def is_test_file(file_path: str, patterns: List[str]) -> bool:
-    file_name = os.path.basename(file_path)
-    return any(fnmatch(file_name, pattern) for pattern in patterns)
 
 
 def is_test_function(name: str, patterns: List[str]) -> bool:
@@ -27,7 +21,7 @@ def is_test_function(name: str, patterns: List[str]) -> bool:
 def is_pytest_mark_usefixtures(node: AnyFunctionDef) -> bool:
     name = get_qualname(node)
     if name is None:
-        return False
+        return False  # pragma: no cover
     return name.startswith('pytest.mark.usefixtures')
 
 
