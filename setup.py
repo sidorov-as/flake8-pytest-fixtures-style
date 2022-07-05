@@ -44,7 +44,7 @@ setup(
     author_email='ereon.dev@gmail.com',
     install_requires=[
         'astpretty==1.6.0',
-        'flake8==3.9.2',
+        'flake8==4.0.1',
         'setuptools',
         'flake8-plugin-utils==1.3.2',
         'flake8-pytest-style==1.4.1',
