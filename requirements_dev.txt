@@ -1,5 +1,5 @@
 astpretty==1.6.0
-pre-commit==2.9.3
+pre-commit==2.19.0
 black==22.6.0
 isort==5.7.0
 mypy==0.812
