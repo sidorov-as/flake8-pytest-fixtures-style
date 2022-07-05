@@ -26,7 +26,7 @@ flake8-eradicate==0.3.0
 flake8-fixme==1.1.1
 flake8-polyfill==1.0.2
 flake8-print==5.0.0
-flake8-quotes==3.0.0
+flake8-quotes==3.3.1
 flake8-string-format==0.3.0
 flake8-tidy-imports==4.8.0
 flake8-typing-imports==1.12.0
