@@ -6,20 +6,14 @@ from flake8_plugin_utils import Plugin as BasePlugin, Visitor
 
 from flake8_pytest_fixtures_style import __version__ as pkg_version
 from flake8_pytest_fixtures_style.config import DEFAULT_CONFIG, Config
-from flake8_pytest_fixtures_style.visitors import (
-    FixtureFactoryVisitor,
-    UnusedFixtureVisitor,
-)
+from flake8_pytest_fixtures_style.visitors import FixtureFactoryVisitor, UnusedFixtureVisitor
 
 
 class Plugin(BasePlugin[Config]):
     name: str = 'flake8-pytest-fixtures'
     version: str = pkg_version
 
-    visitors: List[Type[Visitor[Config]]] = [
-        FixtureFactoryVisitor,
-        UnusedFixtureVisitor,
-    ]
+    visitors: List[Type[Visitor[Config]]] = [FixtureFactoryVisitor, UnusedFixtureVisitor]
 
     @classmethod
     def add_options(cls, option_manager: OptionManager) -> None:
