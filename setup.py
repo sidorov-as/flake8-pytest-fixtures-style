@@ -45,7 +45,7 @@ setup(
     version=get_version(),
     author='Alexey Sidorov',
     author_email='ereon.dev@gmail.com',
-    install_requires=['flake8>=3,<5', 'flake8-plugin-utils==1.3.2', 'flake8-pytest-style==1.6.0'],
+    install_requires=['flake8>=3,<7', 'flake8-plugin-utils==1.3.2', 'flake8-pytest-style==1.6.0'],
     entry_points={'flake8.extension': ['PF = flake8_pytest_fixtures_style.plugin:Plugin']},
     url='https://github.com/sidorov-as/flake8-pytest-fixtures-style',
     license='MIT',
